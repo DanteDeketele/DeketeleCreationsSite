@@ -15,7 +15,10 @@
             <h1>
                 <img class="c-header__logo" src="img/DKTLLogoWhite.svg" alt="Deketele Creations Logo" width="75">
             </h1>
-            <ul class="c-header__nav">
+            <a id="header-hamburger" class="c-header__hamburger" onclick="clickHamburger()">
+                <img src="img/hamburger.svg">
+            </a>
+            <ul id="header-nav" class="c-header__nav c-header__nav-hidden">
                 <li class="c-header__navitem">
                     <p><a class="c-header__navlink" href="">Home</a></p>
                 </li>
@@ -26,14 +29,165 @@
                     <p><a class="c-header__navlink" href="">Services</a></p>
                 </li>
                 <li class="c-header__navitem">
-                    <p><a class="c-header__navlink" href="">About Us</a></p>
+                    <p><a class="c-header__navlink" href="">About</a></p>
                 </li>
             </ul>
         </div>
     </header>
     <main>
-        <section>
-            <h2>Services</h2>
+        <header class="c-intro">
+            <h2 class="c-intro__title">Deketele Creations</h2>
+            <p class="c-intro__slogan">Webdesign & Applied Software</p>
+        </header>
+        <section class="c-section">
+            <h2>Websites</h2>
+            <div class="c-sitecards">
+                <article class="c-sitecard">
+                    <h3 class="c-sitecard__title">Basic</h3>
+                    <p>A website designed for your buisness.</p>
+                    <ul>
+                        <li>
+                            <p>1 Domain included</p>
+                        </li>
+                        <li>
+                            <p>Custom Design</p>
+                        </li>
+                        <li>
+                            <p>Usefull Dashboard</p>
+                        </li>
+                        <li>
+                            <p>SEO</p>
+                        </li>
+                        <li>
+                            <p>User-friendly Editor</p>
+                        </li>
+                        <li>
+                            <p>Analytics</p>
+                        </li>
+                    </ul>
+                    <p>€300 + €4.99/month (€49/year)</p>
+                    <a href="#">Get Started</a>
+                </article>
+                <article class="c-sitecard">
+                    <h3 class="c-sitecard__title">Pro</h3>
+                    <p>A website designed for your buisness.</p>
+                    <ul>
+                        <li>
+                            <p>3 Domains included</p>
+                        </li>
+                        <li>
+                            <p>Custom Design</p>
+                        </li>
+                        <li>
+                            <p>Dedicated Server</p>
+                        </li>
+                        <li>
+                            <p>Usefull Dashboard</p>
+                        </li>
+                        <li>
+                            <p>SEO</p>
+                        </li>
+                        <li>
+                            <p>user-friendly Editor</p>
+                        </li>
+                        <li>
+                            <p>Analytics</p>
+                        </li>
+                    </ul>
+                    <p>€700 + €19.99/month (€190/year)</p>
+                    <a href="#">Get Started</a>
+                </article>
+                <article class="c-sitecard">
+                    <h3 class="c-sitecard__title">Portfolio</h3>
+                    <p>A portfolio site.</p>
+                    <ul>
+                        <li>
+                            <p>1 subdomain (example: https://yourname.dktlportfolios.com)</p>
+                        </li>
+                        <li>
+                            <p>Usefull Dashboard</p>
+                        </li>
+                        <li>
+                            <p>user-friendly Editor</p>
+                        </li>
+                        <li>
+                            <p>Analytics</p>
+                        </li>
+                    </ul>
+                    <p>€2.99/month (€29/year)</p>
+                    <p>FREE for students</p>
+
+                    <a href="#">Get Started</a>
+                </article>
+            </div>
+        </section>
+        <section class="c-section">
+            <h2>Unity Assets</h2>
+            <div class="c-productcards">
+                <article class=" c-productcard u-colspan2 u-rowspan2">
+                    <div class="c-productcard__images">
+                        <img class="c-productcard__image u-colspan2" src="img/CoasterSpline.png"
+                            alt="CoasterSpline Image" width="400">
+                        <img class="c-productcard__image" src="img/CoasterSplineEditor.png" alt="CoasterSpline Image"
+                            width="400">
+                        <img class="c-productcard__image" src="img/CoasterSpline0g.png" alt="CoasterSpline Image"
+                            width="400">
+                    </div>
+                    <header class="c-productcard__header">
+                        <h3 class="c-productcard__title">CoasterSpline</h3>
+                        <p class="c-productcard__price">€21.16</p>
+                        <a class="c-productcard__interact"
+                            href="https://assetstore.unity.com/packages/tools/modeling/coasterspline-300793">Unity
+                            Assetstore</a>
+                    </header>
+                    <p class="c-productcard__discription">
+                        Easily design rollercoasters with this intuitive spline-based
+                        tool. Automatically generate tracks, supports, and program
+                        launches, chain lifts and brakes. Perfect for theme park games, VR, and more!
+                    </p>
+
+                </article>
+                <article class="c-productcard">
+                    <img class="c-productcard__image" src="img/PrefabIconMakerLogo.png" alt="CoasterSpline Image"
+                        width="400">
+                    <header class="c-productcard__header">
+                        <h3 class="c-productcard__title">Prefab Icon Maker</h3>
+                        <p class="c-productcard__price">€4.59</p>
+                        <a class="c-productcard__interact"
+                            href="https://assetstore.unity.com/packages/tools/modeling/coasterspline-300793">Unity
+                            Assetstore</a>
+                    </header>
+                    <p class="c-productcard__discription">
+                        Render high-quality prefab icons directly within the Unity Editor with customizable camera
+                        settings and multiple render
+                        modes.</p>
+                </article>
+                <article class="c-productcard">
+                    <img class="c-productcard__image" src="img/ProjectStatsLogo.png" alt="CoasterSpline Image"
+                        width="400">
+                    <header class="c-productcard__header">
+                        <h3 class="c-productcard__title">Project Stats</h3>
+                        <p class="c-productcard__price">FREE</p>
+                        <a class="c-productcard__interact"
+                            href="https://assetstore.unity.com/packages/tools/modeling/coasterspline-300793">Unity
+                            Assetstore</a>
+                    </header>
+                    <p class="c-productcard__discription">Easily design rollercoasters with this intuitive
+                        spline-based
+                        tool. Automatically generate tracks, supports, and program
+                        launches, chain lifts and brakes. Perfect for theme park games, VR, and more!</p>
+                </article>
+            </div>
+        </section>
+        <section class="c-about">
+            <div class="c-about__info">
+                <h2 class="c-about__infotitle">About me</h2>
+                <p class="c-about__infotext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad saepe odio
+                    minus, sunt maiores iste
+                    pariatur, esse laboriosam, officiis facilis nobis possimus nam officia labore vel blanditiis
+                    aliquid reprehenderit laudantium.</p>
+            </div>
+            <img src="img/DanteFoto.png">
         </section>
     </main>
     <footer class="c-footer">
@@ -61,18 +215,31 @@
             <div class="c-footer__navitem">
                 <h2>WHO ARE WE?</h2>
                 <p>Deketele Creations Was founded in 2024 by Dante Deketele to create a diverse range of software
-                    solutions. His first products where Unity Assetstore assets.</p>
+                    solutions. His first products where Unity Assetstore assets.<br>
+                    Want a new Website or a software solution adapted to your needs? You are at the right address!
+                </p>
             </div>
         </section>
         <section class="c-footer__copy">
             <div class="c-footer__copyitems">
                 <img src="img/DKTLLogoWhite.svg" alt="Deketele Creations Logo" width="75">
                 <p>
-                    WEBSITE DESIGN BY DEKETELE CREATIONS
+                    WEBSITE DESIGN BY <a href="./">DEKETELE CREATIONS</a>
                 </p>
             </div>
         </section>
     </footer>
+    <script>
+        var nav = document.getElementById("header-nav");
+        var hiddenClass = "c-header__nav-hidden";
+        function clickHamburger() {
+            if (nav.classList.contains(hiddenClass)) {
+                nav.classList.remove(hiddenClass);
+            } else {
+                nav.classList.add(hiddenClass);
+            }
+        } 
+    </script>
 </body>
 
 </html>
